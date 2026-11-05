@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Psychedelic Stickers</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="top-bar">
+    <a class="logo" href="#top">Psychedelic Stickers</a>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO: the curved title. If you change a word, change it in BOTH copies (shadow + front). -->
+  <section class="hero" id="top">
+    <h1 class="curved-title">
+      <svg viewBox="0 0 900 380">
+        <defs>
+          <path id="arc-top" d="M 40 260 Q 450 -60 860 260" />
+          <path id="arc-bottom" d="M 160 340 Q 450 190 740 340" />
+        </defs>
+
+        <text class="shadow" transform="translate(8 8)">
+          <textPath href="#arc-top" startOffset="50%" text-anchor="middle">Psychedelic</textPath>
+        </text>
+        <text class="front">
+          <textPath href="#arc-top" startOffset="50%" text-anchor="middle">Psychedelic</textPath>
+        </text>
+
+        <text class="shadow" transform="translate(6 6)">
+          <textPath href="#arc-bottom" startOffset="50%" text-anchor="middle">Stickers</textPath>
+        </text>
+        <text class="front">
+          <textPath href="#arc-bottom" startOffset="50%" text-anchor="middle">Stickers</textPath>
+        </text>
+      </svg>
+    </h1>
+
+    <p class="tagline">Die-cut vinyl stickers for laptops, bottles, and anywhere else that needs more color.</p>
+    <a class="button" href="#shop">Shop the stickers</a>
+  </section>
+
+  <!-- STICKERS: to add one, copy a whole <div class="card"> block. Change the picture name, alt text, name, and price. -->
+  <section class="shop" id="shop">
+    <h2>Fresh off the sheet</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <img src="images/Wicked Tree.PNG" alt="Wicked Tree">
+        <h3>Wicked Tree</h3>
+        <p class="price">$5.00</p>
+      </div>
+
+      <div class="card">
+        <img src="images/Vampire Mirror .PNG" alt="Vampire">
+        <h3>Vampire</h3>
+        <p class="price">$4.50</p>
+      </div>
+
+      <div class="card">
+        <img src="images/Poison Apple.PNG" alt="Poison Apple">
+        <h3>Poison Apple</h3>
+        <p class="price">$4.00</p>
+      </div>
+
+      <div class="card">
+        <img src="images/Cinnamoroll_Sticker.png" alt="Cinnamoroll">
+        <h3>Cinnamoroll</h3>
+        <p class="price">$3.50</p>
+      </div>
+
+      <div class="card">
+        <img src="images/Tiger_Sticker.png" alt="Tiger">
+        <h3>Tiger</h3>
+        <p class="price">$4.50</p>
+      </div>
+
+      <div class="card">
+        <img src="images/Cloud_Lion.png" alt="Cloud Lion">
+        <h3>Cloud Lion</h3>
+        <p class="price">$3.00</p>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <section class="about" id="about">
+    <h2>Made to be stuck</h2>
+    <p>Feeling bored? Our premium stickers from Psychedelic Stickers are guaranteed to spice up your life. With stunning visuals and impeccable quality, our made-to-last decals work on anything: laptops, bottles, walls, and more! We hand-make every sticker because our mission is simple: bring a little art, joy, and glorious color into others' lives, one sticker at a time.</p>
+  </section>
+
+ 
+  <footer class="footer" id="contact">
+    <p class="footer-title">Psychedelic Stickers</p>
+    <p>Questions? <a href="mailto:ake.Contact@gmail.com">Fake.Contact@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>

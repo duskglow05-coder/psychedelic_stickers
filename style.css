@@ -1,0 +1,203 @@
+:root {
+  --dark: #101824;
+  --pink: #a55f91;
+  --orange: #fe9c02;
+  --cream: #97c8ab;
+  --blue: #6794b3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--cream);
+  background: var(--dark);
+}
+
+a {
+  color: inherit;
+}
+
+/* The fun font for headings and special text */
+h2, h3, .logo, .footer-title, .button {
+  font-family: "Shrikhand", Georgia, serif;
+  font-weight: 400;
+}
+
+/* Heading sizes: h2 and h3 are the same size. Change 30px to whatever you like. */
+h2, h3 {
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+/* TOP BAR */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 16px 5%;
+  background: var(--pink);
+}
+
+.logo {
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.top-bar nav a {
+  margin-left: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.top-bar nav a:hover {
+  color: var(--green);
+}
+
+/* HERO: big curved title */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px 70px;
+  background: var(--dark);
+}
+
+.curved-title {
+  width: 100%;
+  max-width: 850px;
+  margin: 0;
+}
+
+.curved-title svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.curved-title text {
+  font-family: "Shrikhand", Georgia, serif;
+  font-size: 110px;
+  stroke-width: 14px;
+  stroke-linejoin: round;
+  paint-order: stroke fill;
+}
+
+.curved-title .shadow {
+  fill: var(--blue);
+  stroke: var(--dark);
+}
+
+.curved-title .front {
+  fill: var(--dark);
+  stroke: var(--cream);
+}
+
+.tagline {
+  max-width: 520px;
+  margin: 20px 0 28px;
+  padding: 12px 20px;
+  background: var(--pink);
+  border: 3px solid var(--blue);
+  border-radius: 20px;
+  box-shadow: 5px 5px 0 var(--dark);
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--cream);
+  background: var(--pink);
+  border: 3px solid var(--blue);
+  border-radius: 999px;
+  box-shadow: 5px 5px 0 var(--blue);
+}
+
+.button:hover {
+  background: var(--dark);
+}
+
+/* STICKER GRID */
+.shop,
+.about {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 70px 20px;
+}
+
+h2 {
+  margin: 0 0 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px 30px;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 10px solid white;
+  border-radius: 40px;
+  box-shadow: 4px 6px 12px rgba(43, 10, 87, 0.4);
+  transform: rotate(-3deg);
+  transition: transform 0.2s;
+}
+
+.card img:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.card h3 {
+  margin: 16px 0 0;
+}
+
+.card .price {
+  margin: 4px 0 0;
+  font-weight: 700;
+  color: var(--pink);
+}
+
+/* ABOUT */
+.about {
+  max-width: 700px;
+  text-align: center;
+}
+
+/* FOOTER */
+.footer {
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--pink);
+  background: var(--dark);
+  border-top: 8px solid var(--cream);
+}
+
+.footer p {
+  margin: 0 0 8px;
+}
+
+.footer-title {
+  font-size: 28px;
+}
+
+/* PHONES */
+@media (max-width: 560px) {
+  .top-bar nav a {
+    margin: 0 20px 0 0;
+  }
+}
